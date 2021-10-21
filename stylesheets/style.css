@@ -9,6 +9,8 @@ body {
 header {
     width: 100%;
     background-color: lightsteelblue;
+    position: sticky;
+    top: 0;
 }
 
 header nav {
@@ -20,6 +22,10 @@ header nav {
 main, header nav {
     margin: 0 auto;
     width: 960px;
+}
+
+header img{
+    border-radius: 0.5rem;
 }
 
 header ul {
@@ -39,6 +45,11 @@ main {
     flex-wrap: wrap;
 }
 
+main img {
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+}
+
 main article { 
     float: right;
     width: 480px;
@@ -47,9 +58,14 @@ main article {
 
 main article section{
     overflow: scroll;
+    overflow-x: hidden;
     height: 350px;
 }
 
-main img {
-    padding-top: 1rem;
+footer {
+    height: 30px;
+    background-color: lightsteelblue;
+    position: sticky;
+    bottom: 0;
+    margin-top: 1rem;
 }
